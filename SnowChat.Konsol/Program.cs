@@ -8,11 +8,12 @@ namespace SnowChat.Konsol
     {
         static void Main(string[] args)
         { 
-            const string subject = "*";
+            const string subject = "SNOWCHAT";
             const string clientName = "ClientName";
             var cf = new ConnectionFactory();
-            var con = cf.CreateConnection("demo.nats.io:4222");
+            var con = cf.CreateConnection("localhost:4222");
             con.Opts.Name = args.Length > 0 ? args[0] : $"Cactus:{Guid.NewGuid().ToString()}";
+            
             var msgHandler = new EventHandler<MsgHandlerEventArgs>((sender, arguments) =>
             {
                 Console.WriteLine($"AT {DateTime.Now.ToLongTimeString()}: " +
