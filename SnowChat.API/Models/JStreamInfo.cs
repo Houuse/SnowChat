@@ -12,7 +12,6 @@ namespace SnowChat.API.Models
         public int max_msgs { get; set; }
         public int max_bytes { get; set; }
         public string discard { get; set; }
-        public int max_age { get; set; }
         public int max_msg_size { get; set; }
         public string storage { get; set; }
         public int num_replicas { get; set; }
