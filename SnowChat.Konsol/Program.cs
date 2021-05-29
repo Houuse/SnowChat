@@ -1,15 +1,19 @@
 ﻿using System;
 using System.Text;
 using NATS.Client;
+using SnowChat.Bootstraper;
 
 namespace SnowChat.Konsol
 {
     class Program
     {
         static void Main(string[] args)
-        { 
+        {
+                
             const string subject = "SNOWCHAT";
             const string clientName = "ClientName";
+            JStreamBootstrap.makeSureTheStreamBootstraped(clientName,subject);
+
             var cf = new ConnectionFactory();
             var con = cf.CreateConnection("localhost:4222");
             con.Opts.Name = args.Length > 0 ? args[0] : $"Cactus:{Guid.NewGuid().ToString()}";

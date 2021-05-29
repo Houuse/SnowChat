@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using NATS.Client;
 using SnowChat.API.Models;
-using SnowChat.API.Utility;
+using SnowChat.Bootstraper.Utility;
 
 namespace SnowChat.API.Controllers
 {

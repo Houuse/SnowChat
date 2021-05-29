@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnowChat.Konsol", "SnowChat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnowChat.API", "SnowChat.API\SnowChat.API.csproj", "{77C307D0-8CF2-4E00-AD32-A88C90D4A77B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnowChat.Bootstraper", "SnowChat.Bootstraper\SnowChat.Bootstraper.csproj", "{08B3604D-B464-46AE-A337-74C74B6DB689}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{77C307D0-8CF2-4E00-AD32-A88C90D4A77B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77C307D0-8CF2-4E00-AD32-A88C90D4A77B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77C307D0-8CF2-4E00-AD32-A88C90D4A77B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08B3604D-B464-46AE-A337-74C74B6DB689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08B3604D-B464-46AE-A337-74C74B6DB689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08B3604D-B464-46AE-A337-74C74B6DB689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08B3604D-B464-46AE-A337-74C74B6DB689}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

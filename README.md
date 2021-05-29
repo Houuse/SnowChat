@@ -6,6 +6,7 @@ this solution contain two main projects
 
 ## System Dependencies
 - NATS server with JStream enabled running locally at localhost:4222
+    - creating a stream inside the NATS server
 - .Net5
 
 ### getting nats server locally
@@ -14,10 +15,16 @@ is using docker, run this command
 
 `docker run -d -p 4222:4222 nats -js`
 
+#### creating the stream in the server
+`docker run -ti --network host natsio/nats-box`
+
+then inside the container run:
+
+`nats str add SNOWCHAT --subjects "SNOWCHAT" --ack --max-msgs=-1 --max-bytes=-1 --max-age=1y --storage file --retention limits --max-msg-size=-1 --discard old --replicas 1 --dupe-window="2m"`
 ### The console client
 to run the project create folder somewhere in your computer
-clone the git repo into it then run this command
-
+clone the git repo into it then run these commands
+- `cd SnowChat`
 - `dotnet run --project SnowChat.Konsol CLIENTNAME`
 - replace the CLIENTNAME with you desired client name, leave it empty and it will be populated
 with a random GUID.

@@ -1,4 +1,4 @@
-﻿namespace SnowChat.API.Utility
+﻿namespace SnowChat.Bootstraper.Utility
 {
     public class StringDecodingUtility
     {
